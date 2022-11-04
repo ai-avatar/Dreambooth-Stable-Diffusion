@@ -77,7 +77,7 @@ data:
   target: main.DataModuleFromConfig
   params:
     batch_size: 1
-    num_workers: 1
+    num_workers: 20
     wrap: false
     train:
       target: ldm.data.personalized.PersonalizedBase
@@ -94,7 +94,7 @@ data:
         reg: true
         per_image_tokens: false
         repeats: 10
-        
+
     validation:
       target: ldm.data.personalized.PersonalizedBase
       params:
